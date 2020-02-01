@@ -1,0 +1,39 @@
+{
+  "name": "ReferralPanda/OpenReward",
+  "authors": [
+    {
+      "name": "poorya bagheri faez",
+      "email": "poorya@referralpanda.com"
+    },
+    {
+      "name": "Immanuel Kannan",
+      "email": "immanuel@referralpanda.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "laravelcollective/html": "^5.5"
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "^5.0",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^8.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ReferralPanda\\OpenReward\\OpenRewardServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ReferralPanda\\OpenReward\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ReferralPanda\\Tests\\OpenReward\\": "tests"
+    }
+  }
+}
